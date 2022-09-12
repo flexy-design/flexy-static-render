@@ -1,0 +1,15 @@
+name = "render"
+main = "src/index.ts"
+compatibility_date = "2022-05-15"
+workers_dev = false
+
+[vars]
+ALLOWED_ORIGINS = "*"
+CACHE_CONTROL = "max-age=86400"
+PATH_PREFIX = ""
+INDEX_FILE = "index.html"
+
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "flexy-design"
+preview_bucket_name = "flexy-design"
